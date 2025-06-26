@@ -11,7 +11,6 @@ public class ContinueBreak {
                 break;
             } if (codigoCarteirinha == 3 || codigoCarteirinha == 7 || codigoCarteirinha == 10) {
                 System.out.println("Código " + codigoCarteirinha + " aceito pelo Hospital Santa Clara.");
-                continue;
             } else {
                 System.out.println("Código " + codigoCarteirinha + " não aceito.");
             }  
