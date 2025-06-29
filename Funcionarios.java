@@ -5,25 +5,15 @@ public class Funcionarios {
     String cargo;
     int idade;
 
-    Funcionarios(String nomeInit, String cargoInit, int idadeInit) {
-        nome = nomeInit;
-        cargo = cargoInit;
-        idade = idadeInit;
-    }
-
-    Funcionarios() {
-        
+    Funcionarios(String nome, String cargo, int idade) {
+        this.nome = nome;
+        this.cargo = cargo;
     }
     public static void main(String[] args) {
-        Funcionarios funcionario1 = new Funcionarios("Rafael", "Desenvolvedor", 20);
-        Funcionarios funcionario2 = new Funcionarios("Jessica", "Social Media", 21);
+        Funcionarios f1 = new Funcionarios("Rafael", "Dev", 20);
 
-        System.out.println(funcionario1.nome);
-        System.out.println(funcionario1.cargo);
-        System.out.println(funcionario1.idade);
-        System.out.println("-----------------");
-        System.out.println(funcionario2.nome);
-        System.out.println(funcionario2.cargo);
-        System.out.println(funcionario2.idade);
+            System.out.println(f1.nome); 
+            System.out.println(f1.cargo); 
+            System.out.println(f1.idade); 
     }
 } 
