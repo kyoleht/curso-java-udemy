@@ -2,7 +2,7 @@ package empresa.dados;
 
 class Funcionario {
     public String nome;
-    private double salario;
+    protected double salario;
 
     private Funcionario(String nome, double salario) {
         this.nome = nome;
@@ -13,5 +13,6 @@ class Funcionario {
 
     protected Funcionario() { // o TestePackage.java consegue ter acesso, pois estão na mesma pasta
         Funcionario func1 = new Funcionario("Rafael", 20000);
+        System.out.println(func1);
     }
 }
