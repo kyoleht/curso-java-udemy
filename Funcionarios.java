@@ -5,12 +5,15 @@ public class Funcionarios {
     String cargo;
     int idade;
 
-    Funcionarios(String nome, String cargo, int idade) {
-        this.nome = nome;
-        this.cargo = cargo;
-        this.idade = idade;
+    Funcionarios(String nomeInit, String cargoInit, int idadeInit) {
+        nome = nomeInit;
+        cargo = cargoInit;
+        idade = idadeInit;
     }
 
+    Funcionarios() {
+        
+    }
     public static void main(String[] args) {
         Funcionarios funcionario1 = new Funcionarios("Rafael", "Desenvolvedor", 20);
         Funcionarios funcionario2 = new Funcionarios("Jessica", "Social Media", 21);
