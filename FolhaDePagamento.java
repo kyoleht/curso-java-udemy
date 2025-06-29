@@ -2,6 +2,6 @@ import empresa.dados.Funcionario; // ou * para pegar todas as classes do package
 
 public class FolhaDePagamento {
     public static void main(String[] args) {
-        Funcionario func1 = new Funcionario("Richard", 6500);
+        Funcionario func1 = new Funcionario();
     }
 }
