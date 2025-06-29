@@ -1,6 +1,6 @@
 package empresa.dados;
 
-public class Funcionario {
+class Funcionario {
     public String nome;
     private double salario;
 
@@ -11,7 +11,7 @@ public class Funcionario {
         System.out.println("Salário: " + salario);
     }
 
-    public Funcionario() {
-        Funcionario func1 = new Funcionario("David", 7400);
+    protected Funcionario() { // o TestePackage.java consegue ter acesso, pois estão na mesma pasta
+        Funcionario func1 = new Funcionario("Rafael", 20000);
     }
 }
