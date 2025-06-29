@@ -1,13 +1,13 @@
-    public class Carro {  
+    public class CalculoCavalos {  
 
     int quantidadeCavalos;
  
             public static void main(String[] args) {  
 
-                Carro dodgeCharger = new Carro();
+                CalculoCavalos dodgeCharger = new CalculoCavalos();
                 dodgeCharger.quantidadeCavalos = 800;
 
-                Carro mustangGt = new Carro();
+                CalculoCavalos mustangGt = new CalculoCavalos();
                 mustangGt.quantidadeCavalos = 488;
 
                 System.out.println("O Dodge Charger possui " + dodgeCharger.quantidadeCavalos + " cavalos");
