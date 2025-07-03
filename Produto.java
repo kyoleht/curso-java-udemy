@@ -12,9 +12,17 @@ public class Produto {
     }
 
     public void exibirLoja() {
-        System.out.println("Item: " + nome + " | ");
-        System.out.println("Preço: " + preco + " | ");
-        System.out.println("Em estoque: " + quantidadeEmEstoque + " | ");
+        System.out.println("Item: " + nome + " | " + "Preço: " + preco + " | " + "Em estoque: " + quantidadeEmEstoque);
+    }
+
+    // acrescentado para futuramente criar um carrinho de compra
+    public void vender(int carrinho) {
+        if (carrinho <= quantidadeEmEstoque) {
+            quantidadeEmEstoque -= carrinho;
+            System.out.println(carrinho + " itens adicionado ao carrinho.");
+        } else {
+            System.out.println("Não há tantos itens em estoque");
+        }
     }
 }
 
@@ -24,9 +32,7 @@ public class Produto {
             Produto product2 = new Produto("Armadura de Ferro", 600, 10);
 
             product1.exibirLoja();
-            System.out.println("_________________");
-            product2.exibirLoja();
-            System.out.println("_________________");
+            product1.vender(5);
     }
 }
 
