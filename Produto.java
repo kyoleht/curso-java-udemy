@@ -6,6 +6,10 @@ public class Produto {
     private int quantidadeEmEstoque;
 
     public Produto(String nome, double preco, int quantidadeEmEstoque) {
+        if (preco < 0) {
+            throw new IllegalArgumentException("Preço não pode ser negativo"); // programa é interrompido com mensagem de erro
+        }
+        
         this.nome = nome;
         this.preco = preco;
         this.quantidadeEmEstoque = quantidadeEmEstoque;
@@ -27,12 +31,12 @@ public class Produto {
 }
 
     class Main {
-        public static void main(String[] args) {
+    public static void main(String[] args) {
             Produto product1 = new Produto("Espada", 350, 15);
             Produto product2 = new Produto("Armadura de Ferro", 600, 10);
+            Produto invalidProduct = new Produto("Poção de Cura", -90, 3);
 
-            product1.exibirLoja();
-            product1.vender(5);
+            invalidProduct.exibirLoja(); // preço setado em 0.0;
     }
 }
 
