@@ -39,15 +39,40 @@ public class Produto {
 
     class Main {
     public static void main(String[] args) {
-            Produto product1 = new Produto("Espada", 350, 15);
-            Produto product2 = new Produto("Armadura de Ferro", 600, 10);
-            Produto invalid1 = new Produto("Capsula de Força", -90, -3);
-            
 
-            System.out.println(product1.obterInfo());
-            product1.vender(5);
-            System.out.println(product1.obterInfo());
-            // Está exibindo a mensagem de erro da instância 'invalid1', mesmo eu não a chamando. Preciso arrumar isso depois; 
+            // testar com try e catch o erro do commit passado
+            Produto product1 = null;
+            try {
+                product1 = new Produto("Espada ", 350, 15);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Erro: Espada -> " + e.getMessage());
+            }
+            
+            Produto product2 = null;
+            try {
+                product2 = new Produto("Armadura de Ferro ", 750, 10);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Erro: Armadura de Ferro -> " + e.getMessage());
+            }
+
+            Produto invalidProduct = null;
+            try {
+                invalidProduct = new Produto("Poção de Cura ", -50, 30);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Erro: Poção de Cura -> " + e.getMessage());
+            }
+
+            if(product1 != null) {
+                System.out.println(product1.obterInfo());
+            } 
+            if(product2 != null) {
+                System.out.println(product2.obterInfo());
+            }
+            if(invalidProduct != null) {
+                System.out.println(invalidProduct.obterInfo());
+            }
+
+            // é uma forma bem "arcaica" de se lidar com isso, mas pretendo refatorar e deixar mais limpo quando tiver mais conhecimento. 
     }
 }
 
