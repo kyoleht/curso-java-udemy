@@ -35,6 +35,14 @@ public class Produto {
             throw new IllegalArgumentException("ERRO: Não há tantos(as) " + nome + "(s) em estoque."); // utilizando a nova função no false
         }
     }
+
+    public void aplicarDesconto(double percentual) {
+        if(percentual < 0 || percentual >= 100) {
+            throw new IllegalArgumentException("ERRO: Desconto não pôde ser aplicado");
+        }
+        this.preco = this.preco * (1 - (percentual / 100));
+        System.out.println("Desconto de " + percentual + "% aplicado ao item " + nome + "!");
+    }
 }
 
     class Main {
