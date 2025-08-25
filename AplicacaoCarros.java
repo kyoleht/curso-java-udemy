@@ -1,4 +1,4 @@
-public class Aplicacao {
+public class AplicacaoCarros {
     public static void main(String[] args) {
         Carros car1 = new Carros("Ferrari", "Puro Sangue");
         car1.exibirDetalhes();
