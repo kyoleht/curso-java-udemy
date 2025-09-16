@@ -1,5 +1,5 @@
 
-public class Livro {
+/* public class Livro {
     public String titulo;
     private String autor;
     protected int anoPublicacao;
@@ -17,7 +17,7 @@ public class Livro {
 
 
 
-/*  Crie uma classe Livro com os seguintes atributos: titulo, autor, anoPublicacao e preco. Utilize diferentes modificadores de acesso para cada atributo e implemente três construtores diferentes para a classe:
+Crie uma classe Livro com os seguintes atributos: titulo, autor, anoPublicacao e preco. Utilize diferentes modificadores de acesso para cada atributo e implemente três construtores diferentes para a classe:
 
 Um construtor "padrão" que não recebe parâmetros.
 
