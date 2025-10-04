@@ -26,7 +26,7 @@ class LojaComercial extends Loja {
     }
 }
 
-public class Main {
+public class LojaTeste {
     public static void main(String[] args) {
         LojaComercial minhaLoja = new LojaComercial("123456789", "Minha Loja");
         minhaLoja.abrir();
