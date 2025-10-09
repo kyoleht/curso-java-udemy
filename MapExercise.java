@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class SetExercise {
+public class MapExercise {
     public static void main(String[] args) {
         Map<String, Integer> estoque = new HashMap<>();
         estoque.put("Arroz", 20);
