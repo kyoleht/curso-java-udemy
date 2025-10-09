@@ -33,4 +33,3 @@ public class Caixa<T> {
         System.out.println("Letra 2: " + caixaDeLetras.obter(1)); // Saída: B
     }
 }
-
