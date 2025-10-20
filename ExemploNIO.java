@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -20,7 +21,7 @@ public class ExemploNIO {
         Path newPath = Paths.get("anotacoes.txt");
         try {
             Files.write(newPath, "Hoje, aprendi sobre NIO!".getBytes());
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("Erro ao ler o newPath: " + e.getMessage());
         } 
 
@@ -30,7 +31,7 @@ public class ExemploNIO {
                 String content = new String(bytes);
                 System.out.println("Arquivo criado com sucesso! - " + content);
             }
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println("Arquivo não encontrado! Erro: " + e.getMessage());
         }
     }
