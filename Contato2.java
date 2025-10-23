@@ -46,5 +46,5 @@ public class Contato2 implements Serializable{
             e.printStackTrace();
         }
     }
-}
+}  
 
