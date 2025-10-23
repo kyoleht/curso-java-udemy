@@ -3,7 +3,9 @@ interface OperacaoMatematica {
     double executar(double a, double b);
 }
 
+
 public class CalculadoraPersonalizada {
+    
     public static void main(String[] args) {
         OperacaoMatematica potencia1 = (a, b) -> Math.pow(a, b);
         System.out.println("Potência de A e B: " + potencia1.executar(10, 3));

@@ -1,3 +1,4 @@
+@SuppressWarnings("unchecked")
 public class Caixa<T> {
     private T[] elementos;
 
